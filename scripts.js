@@ -1,11 +1,54 @@
 const wordList = [
     {
+        es: 'Saludo',
+        ko: '인사'
+    },{
         es: 'Hola',
         ko: '안녕하세요'
+    },{
+        es: 'Encantado',
+        ko: '반갑습니다'
+    },{
+        es: '¿Como te llamas?',
+        ko: '이름이 뭐에요'
+    },{
+        es: 'Me llamo Hector',
+        ko: '저는 헥토로 이에요'
+    },{
+        es: 'Mi nombre es Hector',
+        ko: '제 이름은 헥토로 이에요'
+    },{
+        es: 'Te veo luego',
+        ko: '다음에 또 만나요'
     },
     {
-        es: 'Adiós',
-        ko: '안녕'
+        es: 'Adiós (me voy)',
+        ko: '안녕히 겨세요'
+    },
+    {
+        es: 'Adiós (se va)',
+        ko: '안녕히 가세요'
+    },{
+        es: 'Gracias',
+        ko: '감사합니다'
+    },{
+        es: 'Lo siento',
+        ko: '죄송 합니다'
+    },{
+        es: 'Ok',
+        ko: '괜잖 습니다'
+    },{
+        es: 'Si',
+        ko: '네'
+    },{
+        es: 'No',
+        ko: '아니요'
+    },{
+        es: '¿Como estas?',
+        ko: '어똥게 지내세요'
+    },{
+        es: 'Estoy bien',
+        ko: '저는 잘 지내요'
     }
 ];
 
@@ -63,6 +106,7 @@ function shuffle(array) {
 
 function converToSpeech() {
     const msg = new SpeechSynthesisUtterance();
+    msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES'
     msg.text = wordList[index][language];
     window.speechSynthesis.speak(msg);
 }
