@@ -1,0 +1,15 @@
+{
+    "name": "Curso Coreano",
+    "short_name": "Curso Coreano",
+    "description": "Vocabulario del curso de coreano con el listado de palabsas aleatoriio y pronunciación.",
+    "start_url": "/",
+    "theme_color": "#edf2f7",
+    "background_color": "#edf2f7",
+    "display": "standalone",
+    "icons": [
+          {
+        "src": "flag-64.png",
+        "sizes": "64x64"
+      }
+    ]
+  }
