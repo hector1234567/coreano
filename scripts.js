@@ -9,13 +9,13 @@ const wordList = [
         es: 'Encantado',
         ko: '반갑습니다'
     },{
-        es: '¿Como te llamas?',
-        ko: '이름이 뭐에요'
+        es: '¿Cómo te llamas?',
+        ko: '이름이 뭐에요?'
     },{
-        es: 'Me llamo Hector',
+        es: 'Me llamo Héctor',
         ko: '저는 헥토로 이에요'
     },{
-        es: 'Mi nombre es Hector',
+        es: 'Mi nombre es Héctor',
         ko: '제 이름은 헥토로 이에요'
     },{
         es: 'Te veo luego',
@@ -33,7 +33,7 @@ const wordList = [
         ko: '감사합니다'
     },{
         es: 'Lo siento',
-        ko: '죄송 합니다'
+        ko: '죄송합니다'
     },{
         es: 'Ok',
         ko: '괜잖 습니다'
@@ -44,8 +44,8 @@ const wordList = [
         es: 'No',
         ko: '아니요'
     },{
-        es: '¿Como estas?',
-        ko: '어똥게 지내세요'
+        es: '¿Cómo estás?',
+        ko: '어똥게 지내세요?'
     },{
         es: 'Estoy bien',
         ko: '저는 잘 지내요'
