@@ -17,11 +17,11 @@ const wordList = [
         section: '1'
     },{
         es: 'Me llamo Héctor',
-        ko: '저는 헥토로 이에요',
+        ko: '저는 엑토르 에요',
         section: '1'
     },{
         es: 'Mi nombre es Héctor',
-        ko: '제 이름은 헥토로 이에요',
+        ko: '제 이름은 엑토르 에요',
         section: '1'
     },{
         es: 'Te veo luego',
@@ -30,7 +30,7 @@ const wordList = [
     },
     {
         es: 'Adiós (me voy)',
-        ko: '안녕히 겨세요',
+        ko: '안녕히 계세요',
         section: '1'
     },
     {
@@ -47,7 +47,7 @@ const wordList = [
         section: '1'
     },{
         es: 'Ok',
-        ko: '괜잖 습니다',
+        ko: '괜찮습니다',
         section: '1'
     },{
         es: 'Si',
@@ -59,7 +59,7 @@ const wordList = [
         section: '1'
     },{
         es: '¿Cómo estás?',
-        ko: '어똥게 지내세요?',
+        ko: '어떻게 지내세요?',
         section: '1'
     },{
         es: 'Estoy bien',
@@ -111,23 +111,23 @@ const wordList = [
         section: '2'
     },{
         es: '11',
-        ko: '십 일',
+        ko: '십일',
         section: '2'
     },{
         es: '12',
-        ko: '십 이',
+        ko: '십이',
         section: '2'
     },{
         es: '20',
-        ko: '이 십',
+        ko: '이십',
         section: '2'
     },{
         es: '21',
-        ko: '이 십 일',
+        ko: '이십일',
         section: '2'
     },{
         es: '30',
-        ko: '삼 십',
+        ko: '삼십',
         section: '2'
     },{
         es: '100',
@@ -135,11 +135,11 @@ const wordList = [
         section: '2'
     },{
         es: '200',
-        ko: '이 박',
+        ko: '이박',
         section: '2'
     },{
         es: '585',
-        ko: '오 백 팔 십 오',
+        ko: '오백팔십오',
         section: '2'
     },{
         es: '1.000',
@@ -151,15 +151,15 @@ const wordList = [
         section: '2'
     },{
         es: '100.000',
-        ko: '십 만',
+        ko: '십만',
         section: '2'
     },{
         es: '1.000.000',
-        ko: '백 만',
+        ko: '백만',
         section: '2'
     },{
         es: '10.000.000',
-        ko: '천 만',
+        ko: '천만',
         section: '2'
     },{
         es: '100.000.000',
@@ -167,7 +167,7 @@ const wordList = [
         section: '2'
     },{
         es: '1 (contar)',
-        ko: '하 나',
+        ko: '하나',
         section: '3'
     },{
         es: '2 (contar)',
@@ -183,23 +183,23 @@ const wordList = [
         section: '3'
     },{
         es: '5 (contar)',
-        ko: '다 섯',
+        ko: '다섯',
         section: '3'
     },{
         es: '6 (contar)',
-        ko: '여 삿',
+        ko: '여삿',
         section: '3'
     },{
         es: '7 (contar)',
-        ko: '일 곱',
+        ko: '일곱',
         section: '3'
     },{
         es: '8 (contar)',
-        ko: '여 덟',
+        ko: '여덟',
         section: '3'
     },{
         es: '9 (contar)',
-        ko: '아 홉',
+        ko: '아홉',
         section: '3'
     },{
         es: '10 (contar)',
@@ -207,7 +207,7 @@ const wordList = [
         section: '3'
     },{
         es: '17 (contar)',
-        ko: '열 일 곱',
+        ko: '열일곱',
         section: '3'
     },{
         es: '20 (contar)',
@@ -251,7 +251,7 @@ const wordList = [
         section: '4'
     },{
         es: 'Color rojo',
-        ko: '빨강 색',
+        ko: '빨강색',
         section: '4'
     }
 ];
