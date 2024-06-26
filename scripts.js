@@ -28,6 +28,27 @@ const wordList = [
     {
         es: 'Adiós (se va)',
         ko: '안녕히 가세요'
+    },{
+        es: 'Gracias',
+        ko: '감사합니다'
+    },{
+        es: 'Lo siento',
+        ko: '죄송 합니다'
+    },{
+        es: 'Ok',
+        ko: '괜잖 습니다'
+    },{
+        es: 'Si',
+        ko: '네'
+    },{
+        es: 'No',
+        ko: '아니요'
+    },{
+        es: '¿Como estas?',
+        ko: '어똥게 지내세요'
+    },{
+        es: 'Estoy bien',
+        ko: '저는 잘 지내요'
     }
 ];
 
