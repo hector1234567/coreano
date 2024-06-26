@@ -315,7 +315,8 @@ function shuffle(array) {
 
 function converToSpeech() {
     const msg = new SpeechSynthesisUtterance();
-    msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES'
+    msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES';
+    msg.rate = 0.5;
     msg.text = shuffledList[index][language];
     window.speechSynthesis.speak(msg);
 }
