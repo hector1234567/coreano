@@ -1,11 +1,33 @@
 const wordList = [
     {
+        es: 'Saludo',
+        ko: '인사'
+    },{
         es: 'Hola',
         ko: '안녕하세요'
+    },{
+        es: 'Encantado',
+        ko: '반갑습니다'
+    },{
+        es: '¿Como te llamas?',
+        ko: '이름이 뭐여요'
+    },{
+        es: 'Me llamo Hector',
+        ko: '저는 헥토로 이에요'
+    },{
+        es: 'Mi nombre es Hector',
+        ko: '제 이름은 헥토로 이에요'
+    },{
+        es: 'Te veo luego',
+        ko: '다음에 또 만나요'
     },
     {
-        es: 'Adiós',
-        ko: '안녕'
+        es: 'Adiós (me voy)',
+        ko: '안녕히 겨세요'
+    },
+    {
+        es: 'Adiós (se va)',
+        ko: '안녕히 가세요'
     }
 ];
 
