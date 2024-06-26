@@ -135,7 +135,7 @@ const wordList = [
         section: '2'
     },{
         es: '200',
-        ko: '이박',
+        ko: '이백',
         section: '2'
     },{
         es: '585',
@@ -187,7 +187,7 @@ const wordList = [
         section: '3'
     },{
         es: '6 (contar)',
-        ko: '여삿',
+        ko: '여섯',
         section: '3'
     },{
         es: '7 (contar)',
@@ -223,11 +223,11 @@ const wordList = [
         section: '3'
     },{
         es: '50 (contar)',
-        ko: '쇤',
+        ko: '쉰',
         section: '3'
     },{
         es: '60 (contar)',
-        ko: '여순',
+        ko: '예순',
         section: '3'
     },{
         es: '70 (contar)',
@@ -259,7 +259,7 @@ const wordList = [
         section: '4'
     },{
         es: 'Amarillo',
-        ko: '노람',
+        ko: '노랑',
         section: '4'
     },{
         es: 'Verde',
