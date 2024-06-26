@@ -268,6 +268,7 @@ const koElement = document.querySelector('.btn--ko');
 const esElement = document.querySelector('.btn--es');
 const soundElement = document.querySelector('.btn--sound');
 const selectElement = document.querySelector('.select');
+const speedElement = document.querySelector('.speed');
 
 function start() {
     beforeElement.addEventListener('click', beforeWord);
@@ -316,7 +317,7 @@ function shuffle(array) {
 function converToSpeech() {
     const msg = new SpeechSynthesisUtterance();
     msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES';
-    msg.rate = 0.5;
+    msg.rate = Number(speedElement.value) / 10;
     msg.text = shuffledList[index][language];
     window.speechSynthesis.speak(msg);
 }
