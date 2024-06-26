@@ -10,7 +10,7 @@ const wordList = [
         ko: '반갑습니다'
     },{
         es: '¿Como te llamas?',
-        ko: '이름이 뭐여요'
+        ko: '이름이 뭐에요'
     },{
         es: 'Me llamo Hector',
         ko: '저는 헥토로 이에요'
