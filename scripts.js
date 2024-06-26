@@ -253,6 +253,74 @@ const wordList = [
         es: 'Color rojo',
         ko: '빨강색',
         section: '4'
+    },{
+        es: 'Naranja',
+        ko: '주황',
+        section: '4'
+    },{
+        es: 'Amarillo',
+        ko: '노람',
+        section: '4'
+    },{
+        es: 'Verde',
+        ko: '초록',
+        section: '4'
+    },{
+        es: 'Azul',
+        ko: '파랑',
+        section: '4'
+    },{
+        es: 'Azul marino',
+        ko: '남색',
+        section: '4'
+    },{
+        es: 'Morado',
+        ko: '보라',
+        section: '4'
+    },{
+        es: 'Marron',
+        ko: '갈색',
+        section: '4'
+    },{
+        es: 'Rosa',
+        ko: '분홍',
+        section: '4'
+    },{
+        es: 'Verde claro',
+        ko: '연두',
+        section: '4'
+    },{
+        es: 'Azul cielo',
+        ko: '하늘색',
+        section: '4'
+    },{
+        es: 'Negro',
+        ko: '검정',
+        section: '4'
+    },{
+        es: 'Blanco',
+        ko: '하양',
+        section: '4'
+    },{
+        es: 'Gris',
+        ko: '회색',
+        section: '4'
+    },{
+        es: 'Claro',
+        ko: '밝은',
+        section: '4'
+    },{
+        es: 'Oscuro',
+        ko: '어두운',
+        section: '4'
+    },{
+        es: 'Comida',
+        ko: '음식',
+        section: '5'
+    },{
+        es: 'Arroz',
+        ko: '밥',
+        section: '5'
     }
 ];
 
@@ -268,7 +336,6 @@ const koElement = document.querySelector('.btn--ko');
 const esElement = document.querySelector('.btn--es');
 const soundElement = document.querySelector('.btn--sound');
 const selectElement = document.querySelector('.select');
-const speedElement = document.querySelector('.speed');
 
 function start() {
     beforeElement.addEventListener('click', beforeWord);
@@ -317,7 +384,7 @@ function shuffle(array) {
 function converToSpeech() {
     const msg = new SpeechSynthesisUtterance();
     msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES';
-    msg.rate = Number(speedElement.value) / 10;
+    msg.rate = 0.5;
     msg.text = shuffledList[index][language];
     window.speechSynthesis.speak(msg);
 }
