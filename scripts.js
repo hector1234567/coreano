@@ -17,12 +17,14 @@ const beforeElement = document.querySelector('.btn--before');
 const nextElement = document.querySelector('.btn--next');
 const koElement = document.querySelector('.btn--ko');
 const esElement = document.querySelector('.btn--es');
+const soundElement = document.querySelector('.btn--sound');
 
 function start() {
     beforeElement.addEventListener('click', beforeWord);
     nextElement.addEventListener('click', nextWord);
     koElement.addEventListener('click', languageKorean);
     esElement.addEventListener('click', languageSpanish);
+    soundElement.addEventListener('click', converToSpeech);
     
     shuffle(wordList);
     wordElement.innerHTML = wordList[index][language];
@@ -57,6 +59,12 @@ function shuffle(array) {
         [array[currentIndex], array[randomIndex]] = [
             array[randomIndex], array[currentIndex]];
     }
+}
+
+function converToSpeech() {
+    const msg = new SpeechSynthesisUtterance();
+    msg.text = wordList[index][language];
+    window.speechSynthesis.speak(msg);
 }
 
 start();
