@@ -551,7 +551,7 @@ function converToSpeech() {
     //msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES';
     msg.lang = 'ko-KR';
     msg.rate = 0.5;
-    msg.text = shuffledList[index][language];
+    msg.text = shuffledList[index]['ko'];
     window.speechSynthesis.speak(msg);
 }
 
