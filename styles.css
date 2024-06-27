@@ -71,7 +71,9 @@ body {
 }
 
 .btn--before,
-.btn--next {
+.btn--next,
+.btn--es,
+.btn--ko {
     height: 5rem;
 }
 
@@ -94,6 +96,55 @@ body {
     background-color: rgb(237, 242, 247);
     height: 4rem;
     text-align: center;
+}
+
+.modalBackground {
+    position: absolute;
+    background-color: rgba(53, 56, 59, 0.624);
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.modal {
+    background-color: white;
+
+    position: absolute;
+    top: 50dvh;
+    left: 50dvw;
+    transform: translate(-50%, -50%);
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07)
+        ;
+    
+    border-radius: .5rem;
+    padding: 2rem;
+    max-width: 60rem;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+table td:not(:last-child) {
+    padding-right: 2rem;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.delete:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 658px){

@@ -488,6 +488,11 @@ const koElement = document.querySelector('.btn--ko');
 const esElement = document.querySelector('.btn--es');
 const soundElement = document.querySelector('.btn--sound');
 const selectElement = document.querySelector('.select');
+const penElement = document.querySelector('.btn--pen');
+const bookElement = document.querySelector('.btn--book');
+const modalBackgroundElement = document.querySelector('.modalBackground');
+const modalElement = document.querySelector('.modal');
+const tableElement = document.querySelector('tbody');
 
 function start() {
     beforeElement.addEventListener('click', beforeWord);
@@ -496,6 +501,11 @@ function start() {
     esElement.addEventListener('click', languageSpanish);
     soundElement.addEventListener('click', converToSpeech);
     selectElement.addEventListener('change', selectSection);
+    modalBackgroundElement.addEventListener('click', hideModal);
+    bookElement.addEventListener('click', showModal);
+    penElement.addEventListener('click', writeWord);
+    tableElement.addEventListener('click', handleClickOnTable);
+    modalElement.addEventListener('click', ev => ev.stopPropagation())
     
     shuffledList = [...wordList];
     shuffle(shuffledList);
@@ -551,6 +561,34 @@ function selectSection(ev) {
     shuffle(shuffledList);
     index = 0;
     wordElement.innerHTML = shuffledList[index][language];
+}
+
+function hideModal() {
+    modalBackgroundElement.classList.add('hidden');
+}
+
+function showModal() {
+    if(!tableElement.innerHTML.trim()) return;
+    modalBackgroundElement.classList.remove('hidden');
+}
+
+function writeWord() {
+    const row = `
+            <tr>
+                <td>${shuffledList[index]['ko']}</td>
+                <td>${shuffledList[index]['es']}</td>
+                <td class="delete">❌</td>
+            </tr>
+        `;
+    if(tableElement.innerHTML.includes(row)) return;
+    tableElement.insertAdjacentHTML("beforeend", row);
+}
+
+function handleClickOnTable(ev) {
+    const deleteButton = ev.target.closest('.delete');
+    if(!deleteButton) return;
+    deleteButton.closest('tr').remove();
+    if(!tableElement.innerHTML.trim()) hideModal();
 }
 
 start();
