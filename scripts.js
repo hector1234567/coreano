@@ -135,7 +135,7 @@ const wordList = [
         section: '2'
     },{
         es: '200',
-        ko: '이박',
+        ko: '이백',
         section: '2'
     },{
         es: '585',
@@ -187,7 +187,7 @@ const wordList = [
         section: '3'
     },{
         es: '6 (contar)',
-        ko: '여삿',
+        ko: '여섯',
         section: '3'
     },{
         es: '7 (contar)',
@@ -223,11 +223,11 @@ const wordList = [
         section: '3'
     },{
         es: '50 (contar)',
-        ko: '쇤',
+        ko: '쉰',
         section: '3'
     },{
         es: '60 (contar)',
-        ko: '여순',
+        ko: '예순',
         section: '3'
     },{
         es: '70 (contar)',
@@ -253,6 +253,226 @@ const wordList = [
         es: 'Color rojo',
         ko: '빨강색',
         section: '4'
+    },{
+        es: 'Naranja',
+        ko: '주황',
+        section: '4'
+    },{
+        es: 'Amarillo',
+        ko: '노랑',
+        section: '4'
+    },{
+        es: 'Verde',
+        ko: '초록',
+        section: '4'
+    },{
+        es: 'Azul',
+        ko: '파랑',
+        section: '4'
+    },{
+        es: 'Azul marino',
+        ko: '남색',
+        section: '4'
+    },{
+        es: 'Morado',
+        ko: '보라',
+        section: '4'
+    },{
+        es: 'Marron',
+        ko: '갈색',
+        section: '4'
+    },{
+        es: 'Rosa',
+        ko: '분홍',
+        section: '4'
+    },{
+        es: 'Verde claro',
+        ko: '연두',
+        section: '4'
+    },{
+        es: 'Azul cielo',
+        ko: '하늘색',
+        section: '4'
+    },{
+        es: 'Negro',
+        ko: '검정',
+        section: '4'
+    },{
+        es: 'Blanco',
+        ko: '하양',
+        section: '4'
+    },{
+        es: 'Gris',
+        ko: '회색',
+        section: '4'
+    },{
+        es: 'Claro',
+        ko: '밝은',
+        section: '4'
+    },{
+        es: 'Oscuro',
+        ko: '어두운',
+        section: '4'
+    },{
+        es: 'Comida',
+        ko: '음식',
+        section: '5'
+    },{
+        es: 'Arroz',
+        ko: '밥',
+        section: '5'
+    },{
+        es: 'Sopa',
+        ko: '국',
+        section: '5'
+    },{
+        es: 'Noodles',
+        ko: '국수',
+        section: '5'
+    },{
+        es: 'Carne',
+        ko: '고기',
+        section: '5'
+    },{
+        es: 'Steak',
+        ko: '스테이크',
+        section: '5'
+    },{
+        es: 'Pescado',
+        ko: '생선',
+        section: '5'
+    },{
+        es: 'Huevo',
+        ko: '계란',
+        section: '5'
+    },{
+        es: 'Queso',
+        ko: '치즈',
+        section: '5'
+    },{
+        es: 'Fruta',
+        ko: '과일',
+        section: '5'
+    },{
+        es: 'Verdura',
+        ko: '야채',
+        section: '5'
+    },{
+        es: 'Ensalada',
+        ko: '샐러드',
+        section: '5'
+    },{
+        es: 'Pan',
+        ko: '빵',
+        section: '5'
+    },{
+        es: 'Snack',
+        ko: '과자',
+        section: '5'
+    },{
+        es: 'Tarta',
+        ko: '케이크',
+        section: '5'
+    },{
+        es: 'Agua',
+        ko: '물',
+        section: '5'
+    },{
+        es: 'Leche',
+        ko: '우유',
+        section: '5'
+    },{
+        es: 'Zumo',
+        ko: '주스',
+        section: '5'
+    },{
+        es: 'Cafe',
+        ko: '커피',
+        section: '5'
+    },{
+        es: 'Cola',
+        ko: '콜라',
+        section: '5'
+    },{
+        es: 'Licor',
+        ko: '술',
+        section: '5'
+    },{
+        es: 'Cerveza',
+        ko: '맥주',
+        section: '5'
+    },{
+        es: 'Sal',
+        ko: '소금',
+        section: '5'
+    },{
+        es: 'Azucar',
+        ko: '설탕',
+        section: '5'
+    },{
+        es: 'Delicioso',
+        ko: '맛있어요',
+        section: '5'
+    },{
+        es: 'Es picante',
+        ko: '매워요',
+        section: '5'
+    },{
+        es: 'Es dulce',
+        ko: '달아요',
+        section: '5'
+    },{
+        es: 'Es salado',
+        ko: '짜요',
+        section: '5'
+    },{
+        es: 'Es amargo',
+        ko: '써요',
+        section: '5'
+    },{
+        es: 'Es agrio',
+        ko: '셔요',
+        section: '5'
+    },{
+        es: 'Familia',
+        ko: '가족',
+        section: '6'
+    },{
+        es: 'Madre',
+        ko: '엄마',
+        section: '6'
+    },{
+        es: 'Padre',
+        ko: '아빠',
+        section: '6'
+    },{
+        es: 'Hijo',
+        ko: '아들',
+        section: '6'
+    },{
+        es: 'Hija',
+        ko: '딸',
+        section: '6'
+    },{
+        es: 'Hermano mayor de chico',
+        ko: '형',
+        section: '6'
+    },{
+        es: 'Hermano mayor de chica',
+        ko: '오빠',
+        section: '6'
+    },{
+        es: 'Hermana mayor de chico',
+        ko: '누나',
+        section: '6'
+    },{
+        es: 'Hermana mayor de chica',
+        ko: '언니',
+        section: '6'
+    },{
+        es: 'Hermano/a menor',
+        ko: '동생',
+        section: '6'
     }
 ];
 
@@ -268,7 +488,6 @@ const koElement = document.querySelector('.btn--ko');
 const esElement = document.querySelector('.btn--es');
 const soundElement = document.querySelector('.btn--sound');
 const selectElement = document.querySelector('.select');
-const speedElement = document.querySelector('.speed');
 
 function start() {
     beforeElement.addEventListener('click', beforeWord);
@@ -317,7 +536,7 @@ function shuffle(array) {
 function converToSpeech() {
     const msg = new SpeechSynthesisUtterance();
     msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES';
-    msg.rate = Number(speedElement.value) / 10;
+    msg.rate = 0.5;
     msg.text = shuffledList[index][language];
     window.speechSynthesis.speak(msg);
 }
