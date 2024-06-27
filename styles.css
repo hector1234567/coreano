@@ -56,7 +56,7 @@ body {
     width: 100%;
     height: 4rem;
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 1;
     border: none;
     background-color: rgb(237, 242, 247);
     cursor: pointer;
@@ -124,7 +124,7 @@ body {
     
     border-radius: .5rem;
     padding: 2rem;
-    max-width: 60rem;
+    max-width: 90dvw;
     max-height: 100dvh;
     overflow: auto;
 }
@@ -135,7 +135,8 @@ body {
 
 table {
     font-size: 1.5rem;
-    line-height: 2.8rem;
+    line-height: 2.2;
+    text-wrap: nowrap;
 }
 
 table td:not(:last-child) {
@@ -190,7 +191,6 @@ table td:not(:last-child) {
 
     table {
         font-size: 2rem;
-        line-height: 3rem;
     }
 }
 
@@ -214,7 +214,6 @@ table td:not(:last-child) {
 
     table {
         font-size: 2.5rem;
-        line-height: 3.5rem;
     }
 }
 

@@ -581,7 +581,7 @@ function showModal() {
 function writeWord() {
     const row = `
             <tr>
-                <td>${shuffledList[index]['ko']}</td>
+                <td><strong>${shuffledList[index]['ko']}</strong></td>
                 <td>${shuffledList[index]['es']}</td>
                 <td class="delete">❌</td>
             </tr>
