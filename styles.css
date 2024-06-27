@@ -103,6 +103,7 @@ body {
     background-color: rgba(53, 56, 59, 0.624);
     width: 100dvw;
     height: 100dvh;
+    z-index: 9999999999;
 }
 
 .modal {
