@@ -511,6 +511,8 @@ function start() {
     shuffledList = [...wordList];
     shuffle(shuffledList);
     wordElement.innerHTML = shuffledList[index][language];
+
+    restoreTableFromMemory();
 }
 
 function beforeWord() {
@@ -566,11 +568,13 @@ function selectSection(ev) {
 
 function hideModal() {
     modalBackgroundElement.classList.add('hidden');
+    saveTableOnMemory();
 }
 
 function showModal() {
     if(!tableElement.innerHTML.trim()) return;
     modalBackgroundElement.classList.remove('hidden');
+    saveTableOnMemory();
 }
 
 function writeWord() {
@@ -584,7 +588,7 @@ function writeWord() {
     if(tableElement.innerHTML.includes(row)) return;
     tableElement.insertAdjacentHTML("beforeend", row);
     popupElement.classList.remove('hidden');
-    setTimeout(() => popupElement.classList.add('hidden'), 500);
+    setTimeout(() => popupElement.classList.add('hidden'), 1000);
 }
 
 function handleClickOnTable(ev) {
@@ -592,6 +596,14 @@ function handleClickOnTable(ev) {
     if(!deleteButton) return;
     deleteButton.closest('tr').remove();
     if(!tableElement.innerHTML.trim()) hideModal();
+}
+
+function saveTableOnMemory() {
+    localStorage.setItem('table', tableElement.innerHTML);
+}
+
+function restoreTableFromMemory() {
+    tableElement.innerHTML = localStorage.getItem('table');
 }
 
 start();
