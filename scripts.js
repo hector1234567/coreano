@@ -493,6 +493,7 @@ const bookElement = document.querySelector('.btn--book');
 const modalBackgroundElement = document.querySelector('.modalBackground');
 const modalElement = document.querySelector('.modal');
 const tableElement = document.querySelector('tbody');
+const popupElement = document.querySelector('.popup');
 
 function start() {
     beforeElement.addEventListener('click', beforeWord);
@@ -582,6 +583,8 @@ function writeWord() {
         `;
     if(tableElement.innerHTML.includes(row)) return;
     tableElement.insertAdjacentHTML("beforeend", row);
+    popupElement.classList.remove('hidden');
+    setTimeout(() => popupElement.classList.add('hidden'), 500);
 }
 
 function handleClickOnTable(ev) {
