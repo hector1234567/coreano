@@ -12,6 +12,7 @@ body {
     box-sizing: border-box;
     font-family: "Noto Sans KR", sans-serif;
     background-color: #edf2f7;
+    color: #343a40;
 }
 
 .card {
@@ -86,6 +87,7 @@ body {
     background-color: rgb(237, 242, 247);
     font-family: inherit;
     padding: 0 1rem;
+    color: inherit;
 }
 
 .speed {
@@ -96,6 +98,7 @@ body {
     background-color: rgb(237, 242, 247);
     height: 4rem;
     text-align: center;
+    color: inherit;
 }
 
 .modalBackground {
