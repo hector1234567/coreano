@@ -487,6 +487,7 @@ const nextElement = document.querySelector('.btn--next');
 const koElement = document.querySelector('.btn--ko');
 const esElement = document.querySelector('.btn--es');
 const soundElement = document.querySelector('.btn--sound');
+const speedElement = document.querySelector('.speed');
 const selectElement = document.querySelector('.select');
 const penElement = document.querySelector('.btn--pen');
 const bookElement = document.querySelector('.btn--book');
@@ -550,7 +551,7 @@ function converToSpeech() {
     const msg = new SpeechSynthesisUtterance();
     //msg.lang = language === 'ko' ? 'ko-KR' : 'es-ES';
     msg.lang = 'ko-KR';
-    msg.rate = 0.5;
+    msg.rate = Number(speedElement.value) / 10;
     msg.text = shuffledList[index]['ko'];
     window.speechSynthesis.speak(msg);
 }
