@@ -509,10 +509,11 @@ function start() {
     tableElement.addEventListener('click', handleClickOnTable);
     modalElement.addEventListener('click', ev => ev.stopPropagation())
     
-    shuffledList = [...wordList];
-    shuffle(shuffledList);
-    wordElement.innerHTML = shuffledList[index][language];
+    // shuffledList = [...wordList];
+    // shuffle(shuffledList);
+    // wordElement.innerHTML = shuffledList[index][language];
 
+    selectSection();
     restoreTableFromMemory();
 }
 
@@ -556,8 +557,8 @@ function converToSpeech() {
     window.speechSynthesis.speak(msg);
 }
 
-function selectSection(ev) {
-    const section = ev.target.value;
+function selectSection() {
+    const section = selectElement.value;
     if(section) {
         shuffledList = wordList.filter(word => word.section === section);
     } else {
