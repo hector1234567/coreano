@@ -146,6 +146,10 @@ table td:not(:last-child) {
     padding-right: 2rem;
 }
 
+table td:first-child {
+    text-align: end;
+}
+
 .delete {
     cursor: pointer;
 }
@@ -172,6 +176,36 @@ table td:not(:last-child) {
         100px 100px 80px rgba(0, 0, 0, 0.07)
         ;
     z-index: 9999999;
+}
+
+.eye {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.eye:hover .icon-sm {
+    transform: scale(1.1);
+}
+
+.icon-sm {
+    /* stroke: aqua; */
+    fill: #1572cf;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icon-md {
+    /* stroke: aqua; */
+    fill: #343a40;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon-lg {
+    /* stroke: aqua; */
+    fill: #343a40;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 @media only screen and (max-width: 658px){
