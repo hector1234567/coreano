@@ -19,22 +19,27 @@ const tableElement = document.querySelector('tbody');
 const popupElement = document.querySelector('.popup');
 
 async function start() {
-    const data = await fetch('vocabulary.json');
-    wordList = await data.json();
-    beforeElement.addEventListener('click', beforeWord);
-    nextElement.addEventListener('click', nextWord);
-    koElement.addEventListener('click', languageKorean);
-    esElement.addEventListener('click', languageSpanish);
-    soundElement.addEventListener('click', converToSpeech);
-    selectElement.addEventListener('change', selectSection);
-    modalBackgroundElement.addEventListener('click', hideModal);
-    bookElement.addEventListener('click', showModal);
-    penElement.addEventListener('click', writeWord);
-    tableElement.addEventListener('click', handleClickOnTable);
-    modalElement.addEventListener('click', ev => ev.stopPropagation())
-
-    selectSection();
-    restoreTableFromMemory();
+    try {
+        const data = await fetch('vocabulary.json');
+        wordList = await data.json();
+        beforeElement.addEventListener('click', beforeWord);
+        nextElement.addEventListener('click', nextWord);
+        koElement.addEventListener('click', languageKorean);
+        esElement.addEventListener('click', languageSpanish);
+        soundElement.addEventListener('click', converToSpeech);
+        selectElement.addEventListener('change', selectSection);
+        modalBackgroundElement.addEventListener('click', hideModal);
+        bookElement.addEventListener('click', showModal);
+        penElement.addEventListener('click', writeWord);
+        tableElement.addEventListener('click', handleClickOnTable);
+        modalElement.addEventListener('click', ev => ev.stopPropagation())
+    
+        selectSection();
+        restoreTableFromMemory();
+    } catch(e) {
+        alert('ERROR');
+        console.error(e.message);
+    }
 }
 
 function beforeWord() {
