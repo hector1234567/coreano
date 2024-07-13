@@ -608,7 +608,7 @@ function writeWord() {
                 <td class="delete">❌</td>
             </tr>
         `;
-    if(tableElement.innerHTML.includes(row)) return;
+    if(tableElement.innerHTML.includes(`<td>${shuffledList[index]['es']}</td>`)) return;
     tableElement.insertAdjacentHTML("beforeend", row);
     popupElement.classList.remove('hidden');
     setTimeout(() => popupElement.classList.add('hidden'), 1000);
