@@ -1,0 +1,93 @@
+[
+    {
+        "es": "Comida",
+        "ko": "음식"
+    },{
+        "es": "Arroz",
+        "ko": "밥"
+    },{
+        "es": "Sopa",
+        "ko": "국"
+    },{
+        "es": "Noodles",
+        "ko": "국수"
+    },{
+        "es": "Carne",
+        "ko": "고기"
+    },{
+        "es": "Steak",
+        "ko": "스테이크"
+    },{
+        "es": "Pescado",
+        "ko": "생선"
+    },{
+        "es": "Huevo",
+        "ko": "계란"
+    },{
+        "es": "Queso",
+        "ko": "치즈"
+    },{
+        "es": "Fruta",
+        "ko": "과일"
+    },{
+        "es": "Verdura",
+        "ko": "야채"
+    },{
+        "es": "Ensalada",
+        "ko": "샐러드"
+    },{
+        "es": "Pan",
+        "ko": "빵"
+    },{
+        "es": "Snack",
+        "ko": "과자"
+    },{
+        "es": "Tarta",
+        "ko": "케이크"
+    },{
+        "es": "Agua",
+        "ko": "물"
+    },{
+        "es": "Leche",
+        "ko": "우유"
+    },{
+        "es": "Zumo",
+        "ko": "주스"
+    },{
+        "es": "Cafe",
+        "ko": "커피"
+    },{
+        "es": "Cola",
+        "ko": "콜라"
+    },{
+        "es": "Licor",
+        "ko": "술"
+    },{
+        "es": "Cerveza",
+        "ko": "맥주"
+    },{
+        "es": "Sal",
+        "ko": "소금"
+    },{
+        "es": "Azucar",
+        "ko": "설탕"
+    },{
+        "es": "Delicioso",
+        "ko": "맛있어요"
+    },{
+        "es": "Es picante",
+        "ko": "매워요"
+    },{
+        "es": "Es dulce",
+        "ko": "달아요"
+    },{
+        "es": "Es salado",
+        "ko": "짜요"
+    },{
+        "es": "Es amargo",
+        "ko": "써요"
+    },{
+        "es": "Es agrio",
+        "ko": "셔요"
+    }
+]

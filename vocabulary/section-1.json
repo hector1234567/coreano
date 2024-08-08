@@ -1,0 +1,51 @@
+[
+    {
+        "es": "Saludo",
+        "ko": "인사"
+    },{
+        "es": "Hola",
+        "ko": "안녕하세요"
+    },{
+        "es": "Encantado",
+        "ko": "반갑습니다"
+    },{
+        "es": "¿Cómo te llamas?",
+        "ko": "이름이 뭐에요?"
+    },{
+        "es": "Me llamo Héctor",
+        "ko": "저는 엑토르 에요"
+    },{
+        "es": "Mi nombre es Héctor",
+        "ko": "제 이름은 엑토르 에요"
+    },{
+        "es": "Te veo luego",
+        "ko": "다음에 또 만나요"
+    },{
+        "es": "Adiós (me voy)",
+        "ko": "안녕히 계세요"
+    },{
+        "es": "Adiós (se va)",
+        "ko": "안녕히 가세요"
+    },{
+        "es": "Gracias",
+        "ko": "감사합니다"
+    },{
+        "es": "Lo siento",
+        "ko": "죄송합니다"
+    },{
+        "es": "Ok",
+        "ko": "괜찮습니다"
+    },{
+        "es": "Si",
+        "ko": "네"
+    },{
+        "es": "No",
+        "ko": "아니요"
+    },{
+        "es": "¿Cómo estás?",
+        "ko": "어떻게 지내세요?"
+    },{
+        "es": "Estoy bien",
+        "ko": "저는 잘 지내요"
+    }
+]

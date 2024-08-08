@@ -1,7 +1,7 @@
 let wordList = [];
 let shuffledList = [];
 let index = 0;
-let language = 'ko';
+let language = 'es';
 
 const wordElement = document.querySelector('.word');
 const beforeElement = document.querySelector('.btn--before');
@@ -10,7 +10,7 @@ const koElement = document.querySelector('.btn--ko');
 const esElement = document.querySelector('.btn--es');
 const soundElement = document.querySelector('.btn--sound');
 const speedElement = document.querySelector('.speed');
-const selectElement = document.querySelector('.select');
+const selectElement = document.querySelector('.sectionSelect');
 const penElement = document.querySelector('.btn--pen');
 const bookElement = document.querySelector('.btn--book');
 const modalBackgroundElement = document.querySelector('.modalBackground');
@@ -20,8 +20,7 @@ const popupElement = document.querySelector('.popup');
 
 async function start() {
     try {
-        const data = await fetch('vocabulary.json');
-        wordList = await data.json();
+        wordList = await loadData();
         beforeElement.addEventListener('click', beforeWord);
         nextElement.addEventListener('click', nextWord);
         koElement.addEventListener('click', languageKorean);
@@ -40,6 +39,22 @@ async function start() {
         alert('ERROR');
         console.error(e.message);
     }
+}
+
+async function loadData() {
+    let vocabulary = [];
+    const data = await fetch('vocabulary.json');
+    const sections = await data.json();
+
+    for(const {name, section} of sections) {
+        selectElement.insertAdjacentHTML("beforeend", `<option value="${section}">${name}</option>`);
+        if(section){
+            const data = await fetch(`vocabulary/section-${section}.json`);
+            const words = await data.json();
+            vocabulary = [...vocabulary, ...words.map((w) => ({...w, 'section': section}))];
+        }
+    };
+    return vocabulary;
 }
 
 function beforeWord() {

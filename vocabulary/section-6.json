@@ -1,0 +1,33 @@
+[
+    {
+        "es": "Familia",
+        "ko": "가족"
+    },{
+        "es": "Madre",
+        "ko": "엄마"
+    },{
+        "es": "Padre",
+        "ko": "아빠"
+    },{
+        "es": "Hijo",
+        "ko": "아들"
+    },{
+        "es": "Hija",
+        "ko": "딸"
+    },{
+        "es": "Hermano mayor de chico",
+        "ko": "형"
+    },{
+        "es": "Hermano mayor de chica",
+        "ko": "오빠"
+    },{
+        "es": "Hermana mayor de chico",
+        "ko": "누나"
+    },{
+        "es": "Hermana mayor de chica",
+        "ko": "언니"
+    },{
+        "es": "Hermano/a menor",
+        "ko": "동생"
+    }
+]

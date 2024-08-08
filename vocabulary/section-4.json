@@ -1,0 +1,57 @@
+[
+    {
+        "es": "Colores",
+        "ko": "색깔"
+    },{
+        "es": "Rojo",
+        "ko": "빨강"
+    },{
+        "es": "Color rojo",
+        "ko": "빨강색"
+    },{
+        "es": "Naranja",
+        "ko": "주황"
+    },{
+        "es": "Amarillo",
+        "ko": "노랑"
+    },{
+        "es": "Verde",
+        "ko": "초록"
+    },{
+        "es": "Azul",
+        "ko": "파랑"
+    },{
+        "es": "Azul marino",
+        "ko": "남색"
+    },{
+        "es": "Morado",
+        "ko": "보라"
+    },{
+        "es": "Marron",
+        "ko": "갈색"
+    },{
+        "es": "Rosa",
+        "ko": "분홍"
+    },{
+        "es": "Verde claro",
+        "ko": "연두"
+    },{
+        "es": "Azul cielo",
+        "ko": "하늘색"
+    },{
+        "es": "Negro",
+        "ko": "검정"
+    },{
+        "es": "Blanco",
+        "ko": "하양"
+    },{
+        "es": "Gris",
+        "ko": "회색"
+    },{
+        "es": "Claro",
+        "ko": "밝은"
+    },{
+        "es": "Oscuro",
+        "ko": "어두운"
+    }
+]

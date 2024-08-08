@@ -78,7 +78,7 @@ body {
     height: 5rem;
 }
 
-.select {
+.sectionSelect {
     border: none;
     border-radius: 0;
     margin-left: auto;
@@ -222,7 +222,7 @@ table td:first-child {
         height: 6rem;
     }
 
-    .select {
+    .sectionSelect {
         height: 4rem;
     }
 
@@ -245,7 +245,7 @@ table td:first-child {
         height: 7rem;
     }
 
-    .select {
+    .sectionSelect {
         height: 5rem;
     }
 
@@ -268,7 +268,7 @@ table td:first-child {
         height: 8rem;
     }
 
-    .select {
+    .sectionSelect {
         height: 6rem;
     }
 }
@@ -287,7 +287,7 @@ table td:first-child {
         height: 9rem;
     }
 
-    .select {
+    .sectionSelect {
         height: 7rem;
     }
 }
