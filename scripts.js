@@ -1,5 +1,6 @@
 let wordList = [];
 let shuffledList = [];
+let savedList = [];
 let index = 0;
 let language = 'es';
 
@@ -20,6 +21,7 @@ const popupElement = document.querySelector('.popup');
 
 async function start() {
     try {
+        restoreTableFromMemory();
         wordList = await loadData();
         beforeElement.addEventListener('click', beforeWord);
         nextElement.addEventListener('click', nextWord);
@@ -34,7 +36,6 @@ async function start() {
         modalElement.addEventListener('click', ev => ev.stopPropagation())
     
         selectSection();
-        restoreTableFromMemory();
     } catch(e) {
         alert('ERROR');
         console.error(e.message);
@@ -50,7 +51,8 @@ async function loadData() {
         selectElement.insertAdjacentHTML("beforeend", `<option value="${section}">${name}</option>`);
         if(section){
             const data = await fetch(`vocabulary/section-${section}.json`);
-            const words = await data.json();
+            let words = await data.json();
+            //words = words.filter(w => !savedList.includes(w['es']));
             vocabulary = [...vocabulary, ...words.map((w) => ({...w, 'section': section}))];
         }
     };
@@ -106,10 +108,11 @@ function converToSpeech() {
 
 function selectSection() {
     const section = selectElement.value;
+    let notSavedWordList = wordList.filter(w => !savedList.includes(w['es']));
     if(section) {
-        shuffledList = wordList.filter(word => word.section === section);
+        shuffledList = notSavedWordList.filter(word => word.section === section);
     } else {
-        shuffledList = [...wordList];
+        shuffledList = [...notSavedWordList];
     }
     shuffle(shuffledList);
     index = 0;
@@ -129,6 +132,7 @@ function showModal() {
 
 function writeWord() {
     if(!shuffledList.length) return;
+    if(tableElement.innerHTML.includes(`<td>${shuffledList[index]['es']}</td>`)) return;
     const row = `
             <tr>
                 <td>
@@ -147,11 +151,11 @@ function writeWord() {
                         </svg>
                     </span>
                 </td>
-                <td>${shuffledList[index]['es']}</td>
+                <td class="word_es">${shuffledList[index]['es']}</td>
                 <td class="delete">❌</td>
             </tr>
         `;
-    if(tableElement.innerHTML.includes(`<td>${shuffledList[index]['es']}</td>`)) return;
+    savedList = [...savedList, shuffledList[index]['es']];
     tableElement.insertAdjacentHTML("beforeend", row);
     popupElement.classList.remove('hidden');
     setTimeout(() => popupElement.classList.add('hidden'), 1000);
@@ -170,6 +174,9 @@ function handleClickOnTable(ev) {
     const eyeButton = ev.target.closest('.eye');
     if(deleteButton) {
         deleteButton.closest('tr').remove();
+        savedList= savedList.filter(function(word) {
+            return word !== deleteButton.closest('tr').querySelector('.word_es').textContent;
+        })
         if(!tableElement.innerHTML.trim()) hideModal();
     } else if(eyeButton) {
         for(let el of eyeButton.closest('td').children) {
@@ -180,10 +187,12 @@ function handleClickOnTable(ev) {
 
 function saveTableOnMemory() {
     localStorage.setItem('table', tableElement.innerHTML);
+    localStorage.setItem('savedList', JSON.stringify(savedList));
 }
 
 function restoreTableFromMemory() {
     tableElement.innerHTML = localStorage.getItem('table');
+    savedList = localStorage.getItem('savedList') ? JSON.parse(localStorage.getItem('savedList')) : [];
 }
 
 start();
