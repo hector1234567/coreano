@@ -58,12 +58,14 @@ async function loadData() {
 }
 
 function beforeWord() {
-    index = (index === 0) ? 0 : index - 1;
+    if(shuffledList.length <= 1) return;
+    index = (index === 0) ? shuffledList.length - 1 : index - 1;
     wordElement.innerHTML = shuffledList[index][language];
 }
 
 function nextWord() {
-    index = (index === shuffledList.length - 1) ? shuffledList.length - 1 : index + 1;
+    if(shuffledList.length <= 1) return;
+    index = (index === shuffledList.length - 1) ? 0 : index + 1;
     wordElement.innerHTML = shuffledList[index][language];
 }
 
@@ -126,6 +128,7 @@ function showModal() {
 }
 
 function writeWord() {
+    if(!shuffledList.length) return;
     const row = `
             <tr>
                 <td>
@@ -152,6 +155,14 @@ function writeWord() {
     tableElement.insertAdjacentHTML("beforeend", row);
     popupElement.classList.remove('hidden');
     setTimeout(() => popupElement.classList.add('hidden'), 1000);
+
+    shuffledList = shuffledList.filter((_, i) => i !== index);
+    index = index < shuffledList.length ? index : 0;
+    if(shuffledList.length > 0) {
+        wordElement.innerHTML = shuffledList[index][language]
+    } else {
+        wordElement.innerHTML = '🦑';
+    };
 }
 
 function handleClickOnTable(ev) {
