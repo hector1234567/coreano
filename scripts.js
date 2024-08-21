@@ -36,6 +36,8 @@ async function start() {
         modalElement.addEventListener('click', ev => ev.stopPropagation())
     
         selectSection();
+
+        window.addEventListener('beforeunload',saveTableOnMemory);
     } catch(e) {
         alert('ERROR');
         console.error(e.message);
