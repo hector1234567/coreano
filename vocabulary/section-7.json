@@ -1,0 +1,63 @@
+[
+    {
+        "es": "Casa",
+        "ko": "집"
+    },{
+        "es": "Entrada",
+        "ko": "현관"
+    },{
+        "es": "Pasillo",
+        "ko": "복도"
+    },{
+        "es": "Habitación",
+        "ko": "방"
+    },{
+        "es": "Salón",
+        "ko": "거실"
+    },{
+        "es": "Dormitorio",
+        "ko": "침실"
+    },{
+        "es": "Cocina",
+        "ko": "부엌"
+    },{
+        "es": "Biblioteca",
+        "ko": "서재"
+    },{
+        "es": "Baño",
+        "ko": "화장실"
+    },{
+        "es": "Balcón",
+        "ko": "베란다"
+    },{
+        "es": "Sótano",
+        "ko": "지하실"
+    },{
+        "es": "Cama",
+        "ko": "침대"
+    },{
+        "es": "Silla",
+        "ko": "의자"
+    },{
+        "es": "Mesa",
+        "ko": "식탁"
+    },{
+        "es": "Escritorio",
+        "ko": "책상"
+    },{
+        "es": "Sofá",
+        "ko": "소파"
+    },{
+        "es": "Televisión",
+        "ko": "텔레비전"
+    },{
+        "es": "Nevera",
+        "ko": "냉장고"
+    },{
+        "es": "Armario",
+        "ko": "장롱"
+    },{
+        "es": "Estantería",
+        "ko": "선반"
+    }
+]
