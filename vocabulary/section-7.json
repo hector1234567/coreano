@@ -33,6 +33,24 @@
         "es": "Sótano",
         "ko": "지하실"
     },{
+        "es": "Techo",
+        "ko": "전장"
+    },{
+        "es": "Suelo",
+        "ko": "바닥"
+    },{
+        "es": "Tejado",
+        "ko": "지붕"
+    },{
+        "es": "Ventana",
+        "ko": "창문"
+    },{
+        "es": "Escaleras",
+        "ko": "계단"
+    },{
+        "es": "Patio",
+        "ko": "마당"
+    },{
         "es": "Cama",
         "ko": "침대"
     },{
