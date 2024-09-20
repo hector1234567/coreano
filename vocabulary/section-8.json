@@ -59,5 +59,26 @@
     },{
         "es": "Doctor",
         "ko": "의사"
+    },{
+        "es": "Biblioteca",
+        "ko": "도서관"
+    },{
+        "es": "Salón de clases",
+        "ko": "교실"
+    },{
+        "es": "Escuela",
+        "ko": "학교"
+    },{
+        "es": "Lo siento",
+        "ko": "미안해요"
+    },{
+        "es": "Está bien",
+        "ko": "괜찮아요"
+    },{
+        "es": "Adiós 2",
+        "ko": "잘 가요"
+    },{
+        "es": "De nada",
+        "ko": "천만에요"
     }
 ]
